@@ -1,0 +1,18 @@
+{
+  "name": "phonetisaurus-js-khmer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "phonetisaurus": "^0.0.1",
+    "split-khmer": "^1.0.1"
+  }
+}

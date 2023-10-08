@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonetisaurus.js Khmer G2P</title>
+    <style>
+      body {
+        background-color: snow;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Kantumruy Pro', 'Helvetica Neue', sans-serif;
+      }
+      textarea {
+        font-family: inherit;
+        font-size: 1rem;
+        padding: .6rem .8rem;
+        resize: none;
+        font-weight: 500;
+      }
+      #app {
+        padding: 2rem;
+        margin: 1rem auto;
+        max-width: 512px;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Khmer G2P with Phonetisaurus.js</h2>
+      <p><small>Downloading process might take a while, please wait until the textbox is enabled.</small></p>
+      <textarea rows="6" placeholder="Input" disabled id="input"></textarea>
+      <textarea rows="6" placeholder="Output" disabled id="output"></textarea>
+      <p>Powered by WebAssembly compiled Emscripten</p>
+      <a href="https://github.com/seanghay/phonetisaurus-js" target="_blank">View on GitHub</a>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
